@@ -1,8 +1,13 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #banner {
     background-color: rgb(194, 96, 96);
     padding: 20px;
     text-align: center;
     color: white;
+    font-weight: 580;
 }
 
 #main-heading {
@@ -39,3 +44,40 @@
     width:400px;
     height:auto;
 }
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-left, .card-right {
+    background-color: rgb(194, 96, 96);
+    width: 100px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    padding-top: 25px;
+}
+
+.card {
+    min-height: 300px;
+    width: 500px;
+    flex: 0 0 auto;
+    padding: 32px;
+    margin: 25px 0;
+    border: 2px solid rgb(194, 96, 96, .3);
+}
+
+.card h3 {
+    font-weight: bold;
+}
+.card p, .card h3 {
+    color:rgb(4, 4, 43);
+}
+
